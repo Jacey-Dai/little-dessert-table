@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f8f2e7">
+<title>小小甜品桌</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header><a href="./" class="brand"><span>小小甜品桌</span><small>Little Dessert Table</small></a><button id="undo">撤销</button></header>
+<main>
+<nav id="steps" aria-label="制作步骤"></nav>
+<div class="workspace">
+<section class="table" aria-label="作品预览">
+<div class="cloth"></div>
+<canvas id="plate" width="800" height="800" tabindex="0" aria-label="俯视餐盘，可用方向键移动并按回车放置"></canvas>
+<p id="hint" aria-live="polite"></p>
+</section>
+<aside id="panel"></aside>
+</div>
+<footer id="actions"></footer>
+<p id="status" role="status"></p>
+</main>
+</body>
+</html>
